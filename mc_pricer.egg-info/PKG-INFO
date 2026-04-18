@@ -1,3 +1,24 @@
+Metadata-Version: 2.4
+Name: mc-pricer
+Version: 0.1.0
+Summary: Monte Carlo option pricing engine with variance reduction techniques
+Home-page: https://github.com/YOUR-USERNAME/monte-carlo-option-pricer
+Author: Your Name
+Author-email: your@email.com
+License: MIT
+Keywords: quantitative finance,options,monte carlo,black scholes
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26
+Requires-Dist: scipy>=1.11
+Requires-Dist: matplotlib>=3.8
+Requires-Dist: plotly>=5.18
+Requires-Dist: pandas>=2.1
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0; extra == "dev"
+Requires-Dist: jupyter>=1.0; extra == "dev"
+
 # Monte Carlo Option Pricer
 
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
