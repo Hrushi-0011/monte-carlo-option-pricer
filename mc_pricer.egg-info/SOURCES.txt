@@ -13,4 +13,7 @@ mc_pricer.egg-info/SOURCES.txt
 mc_pricer.egg-info/dependency_links.txt
 mc_pricer.egg-info/requires.txt
 mc_pricer.egg-info/top_level.txt
+tests/test_black_scholes.py
+tests/test_greeks.py
 tests/test_pricing.py
+tests/test_variance_reduction.py

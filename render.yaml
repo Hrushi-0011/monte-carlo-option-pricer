@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: mc-pricer-backend
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+
+  - type: web
+    name: mc-pricer-frontend
+    runtime: node
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    startCommand: npx serve -s dist -l 10000
+    plan: free
+    envVars:
+      - key: VITE_API_URL
+        sync: false

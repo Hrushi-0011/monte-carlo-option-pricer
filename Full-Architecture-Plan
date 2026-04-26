@@ -1,0 +1,34 @@
+┌─────────────────────────────────────────────────────┐
+│                   USER'S BROWSER                    │
+│          React + Tailwind + Framer Motion           │
+│     (Stunning UI, live charts, smooth animations)   │
+└──────────────────────┬──────────────────────────────┘
+                       │ HTTP / REST API
+┌──────────────────────▼──────────────────────────────┐
+│                  FASTAPI BACKEND                    │
+│         (Wraps your mc_pricer package)              │
+│     /price  /greeks  /convergence  /simulate        │
+└──────────────┬────────────────────┬─────────────────┘
+               │                    │
+┌──────────────▼──────┐  ┌──────────▼─────────────────┐
+│   mc_pricer engine  │  │      Claude AI API          │
+│  (Your Phase 1-6    │  │  (Explains results in       │
+│   Python package)   │  │   plain English to user)    │
+└─────────────────────┘  └────────────────────────────┘
+               │
+┌──────────────▼──────────────────────────────────────┐
+│              DEPLOYMENT (Render.com)                │
+│         Free tier — live URL for everyone           │
+└─────────────────────────────────────────────────────┘
+
+🎨 What It'll Look Like
+
+Dark glassmorphism UI — frosted glass cards, neon accents, smooth gradients
+Live interactive charts — parameters update charts in real time
+Animated number counters — prices roll up when calculated
+AI explanation panel — Claude explains what the results mean in plain English
+Mobile responsive — works on phone too
+Professional landing page — hero section, feature cards, how it works
+
+📦 Tech Stack
+LayerTechnologyWhyFrontendReact + TypeScriptIndustry standard, component-basedStylingTailwind CSS + shadcn/uiRapid beautiful UIAnimationsFramer MotionSmooth, professional feelChartsPlotly.js + RechartsInteractive financial chartsBackendFastAPI (Python)Keeps your mc_pricer package, fastAI LayerClaude APIExplains results intelligentlyDeploymentRender.comFree, easy, production-readyVersion ControlGitHubAlready set up
