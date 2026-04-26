@@ -2,6 +2,9 @@ FROM python:3.13-slim
 
 WORKDIR /app
 
+# Install git (needed by some pip packages)
+RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
+
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
@@ -10,7 +13,6 @@ COPY backend/ ./backend/
 COPY setup.cfg ./
 COPY pyproject.toml ./
 
-# Install package without editable mode - no git needed
 RUN pip install --no-cache-dir .
 
 EXPOSE 8000
