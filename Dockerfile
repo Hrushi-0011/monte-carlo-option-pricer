@@ -10,7 +10,8 @@ COPY backend/ ./backend/
 COPY setup.cfg ./
 COPY pyproject.toml ./
 
-RUN pip install -e .
+# Install package without editable mode - no git needed
+RUN pip install --no-cache-dir .
 
 EXPOSE 8000
 
